@@ -42,6 +42,17 @@ tox -e py311                   # Test on Python 3.11
 tox -e style                   # Full format/lint pipeline
 ```
 
+### Package Management
+
+**When installing new packages during development**:
+
+```bash
+uv add <package-name>          # Add to [project] dependencies
+uv add --dev <package-name>    # Add to dev dependencies
+```
+
+This automatically updates `pyproject.toml` and `uv.lock`. **Do NOT manually edit pyproject.toml for dependencies** — always use `uv add`.
+
 ## Testing
 
 ```bash
@@ -175,10 +186,23 @@ Assistant: (Automatically follows 4-phase workflow below)
 - Modified files + rationale
 - Test results (all pass)
 - Traceability: REQ → Spec → Tests → Code
-- Create git commit: ./tools/commit.sh
+- **Create progress file**: docs/progress/REQ-X-Y.md with full Phase 1-4 documentation
+  * Include: Requirements, Implementation locations, Test results, Git commit
+  * Add REQ traceability table (implementation ↔ test coverage)
+- **Update progress tracking**: docs/DEV-PROGRESS.md
+  * Find REQ row in developer section (Frontend/Backend/Agent)
+  * Update Phase: 0 → 4
+  * Update Status: ⏳ Backlog → ✅ Done
+  * Update Notes: Add commit SHA (e.g., "Commit: f5412e9")
+- **Create git commit**:
+  * Format: "chore: Update progress tracking for REQ-X-Y completion"
+  * Include: progress file creation + DEV-PROGRESS.md update
+  * Tag with 🤖 Claude Code marker
 ```
 
-**Key Principle**: Phase 1-2 pause for review = prevent rework. Spec must be approved before coding.
+**Key Principles**:
+- Phase 1-2 pause for review = prevent rework. Spec must be approved before coding.
+- Progress tracking: Always complete Phase 4 progress files to maintain audit trail & team visibility.
 
 ---
 
