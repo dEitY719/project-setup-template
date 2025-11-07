@@ -1,0 +1,28 @@
+# Project Configuration Template
+# ==================================================
+# 새 프로젝트 시작 시 이 파일을 수정하세요.
+# Modify this file when starting a new project.
+
+# 프로젝트 기본 정보 (Project Metadata)
+PROJECT_NAME="project-template"
+PROJECT_DESCRIPTION="AI-driven application template"
+PROJECT_VERSION="0.1.0"
+DEVELOPER_NAME="developer"
+
+# 기술 스택 (Tech Stack)
+BACKEND_FRAMEWORK="FastAPI"          # FastAPI, Django, Flask, etc.
+PYTHON_VERSION="3.11"                # 3.9, 3.10, 3.11, 3.12, etc.
+DATABASE_TYPE="PostgreSQL"           # PostgreSQL, MySQL, SQLite, MongoDB, etc.
+PACKAGE_MANAGER="uv"                 # uv, pip, poetry, etc.
+
+# 선택사항 (Optional)
+# 데이터베이스 설정 (Database Configuration)
+DB_HOST="localhost"
+DB_PORT="5432"
+DB_NAME="app_db"
+
+# 프로젝트 경로 (Project Paths)
+PROJECT_ROOT="."
+SRC_PATH="src"
+TESTS_PATH="tests"
+DOCS_PATH="docs"
