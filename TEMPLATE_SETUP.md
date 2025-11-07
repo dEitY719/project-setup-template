@@ -24,17 +24,20 @@ nano .project-info
 ```
 
 **필수 항목 (Required)**:
+
 - `PROJECT_NAME`: 프로젝트 이름 (예: "my-awesome-app")
 - `PROJECT_DESCRIPTION`: 프로젝트 설명
 - `PROJECT_VERSION`: 시작 버전 (일반적으로 "0.1.0")
 - `DEVELOPER_NAME`: 당신의 이름
 
 **선택 항목 (Optional)**:
+
 - `BACKEND_FRAMEWORK`: FastAPI, Django, Flask 등
 - `PYTHON_VERSION`: 3.11 (또는 원하는 버전)
 - `DATABASE_TYPE`: PostgreSQL, MySQL, SQLite 등
 
 **예시**:
+
 ```bash
 PROJECT_NAME="my-learning-app"
 PROJECT_DESCRIPTION="AI-powered learning assistant"
@@ -56,6 +59,7 @@ nano docs/FEATURE_REQUIREMENTS.md
 ```
 
 **예시 구조**:
+
 ```markdown
 ### REQ-A1-Authentication
 
@@ -88,6 +92,7 @@ nano docs/ARCHITECTURE.md
 ```
 
 **포함할 내용**:
+
 - 시스템 다이어그램
 - 주요 컴포넌트 설명
 - 데이터 모델 (SQL/NoSQL)
@@ -107,6 +112,7 @@ nano README.md
 ```
 
 **수정 항목**:
+
 - 프로젝트 이름 및 설명
 - 주요 기능 (Features 섹션)
 - 빠른 시작 가이드 (필요시)
@@ -122,6 +128,7 @@ nano README.md
 ```
 
 다른 터미널에서:
+
 ```bash
 ./tools/dev.sh test            # 테스트 실행
 ./tools/dev.sh format          # 코드 포맷
@@ -138,11 +145,13 @@ claude
 ```
 
 프롬프트에서:
+
 ```
 REQ-A1-Authentication 기능 구현해
 ```
 
 **자동 워크플로우**:
+
 1. **Phase 1**: Specification - 명세 검토
 2. **Phase 2**: Test Design - 테스트 설계 검토
 3. **Phase 3**: Implementation - 코드 작성 및 검증

@@ -7,6 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **Project Setup**: See `.project-info` for project metadata configuration.
 
 Edit `.project-info` to customize:
+
 - `PROJECT_NAME`: Your project name
 - `PROJECT_DESCRIPTION`: Project description
 - `PROJECT_VERSION`: Semantic version
@@ -147,12 +148,14 @@ Update this section with your project's data model:
 **When to use**: Each feature request follows format: `"REQ-<ID> <description>"` (implement REQ with ID)
 
 ### Command Format
+
 ```
 User: "REQ-A1-Login 기능 구현해"
 Assistant: (Automatically follows 4-phase workflow below)
 ```
 
 ### Phase 1️⃣: SPECIFICATION (Parse & Pause for Review)
+
 ```
 - Extract REQ ID, requirement, priority, acceptance criteria from docs/FEATURE_REQUIREMENTS.md
 - Summarize: intent, constraints, performance goals
@@ -162,6 +165,7 @@ Assistant: (Automatically follows 4-phase workflow below)
 ```
 
 ### Phase 2️⃣: TEST DESIGN (TDD Before Code)
+
 ```
 - Create: tests/<domain>/test_<feature>.py
 - Design 4-5 test cases:
@@ -174,6 +178,7 @@ Assistant: (Automatically follows 4-phase workflow below)
 ```
 
 ### Phase 3️⃣: IMPLEMENTATION (Code to Spec)
+
 ```
 - Write minimal code satisfying spec + tests
 - Follow SOLID + conventions from above
@@ -182,6 +187,7 @@ Assistant: (Automatically follows 4-phase workflow below)
 ```
 
 ### Phase 4️⃣: SUMMARY (Report & Commit)
+
 ```
 - Modified files + rationale
 - Test results (all pass)
@@ -201,6 +207,7 @@ Assistant: (Automatically follows 4-phase workflow below)
 ```
 
 **Key Principles**:
+
 - Phase 1-2 pause for review = prevent rework. Spec must be approved before coding.
 - Progress tracking: Always complete Phase 4 progress files to maintain audit trail & team visibility.
 

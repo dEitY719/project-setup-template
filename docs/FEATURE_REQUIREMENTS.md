@@ -18,11 +18,13 @@ Describe your project's main purpose and goals in 2-3 sentences.
 ## 🎯 Scope
 
 ### In Scope
+
 - [ ] Feature 1: Description
 - [ ] Feature 2: Description
 - [ ] Feature 3: Description
 
 ### Out of Scope
+
 - [ ] Future feature (defer to next version)
 - [ ] External dependency (not building in-house)
 
@@ -37,11 +39,13 @@ Describe your project's main purpose and goals in 2-3 sentences.
 **Priority**: High / Medium / Low
 
 **Acceptance Criteria**:
+
 - [ ] Criterion 1
 - [ ] Criterion 2
 - [ ] Criterion 3
 
 **Implementation Details**:
+
 - Location: `src/module/file.py`
 - Input: Describe parameters
 - Output: Describe return value
@@ -56,6 +60,7 @@ Describe your project's main purpose and goals in 2-3 sentences.
 **Priority**: ...
 
 **Acceptance Criteria**:
+
 - [ ] ...
 
 ---

@@ -40,10 +40,12 @@ Example:
 **Purpose**: What does this component do?
 
 **Responsibilities**:
+
 - Task 1
 - Task 2
 
 **Key Classes/Functions**:
+
 - `class/function_name`: Description
 
 **Dependencies**: List external dependencies

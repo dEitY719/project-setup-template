@@ -10,7 +10,7 @@ This is a template repository for rapid project setup with pre-configured develo
 
 ### 1. Prerequisites
 
-- **Claude Code CLI**: Install from https://docs.claude.com/en/docs/claude-code/getting-started
+- **Claude Code CLI**: Install from <https://docs.claude.com/en/docs/claude-code/getting-started>
 - **Python 3.11+**: Required for development
 - **uv**: Python package manager (automatically installed via dev.sh)
 
@@ -72,11 +72,13 @@ See `CLAUDE.md` → "REQ-Based Development Workflow" for details.
 All features are developed using Requirement IDs (REQ) defined in `docs/FEATURE_REQUIREMENTS.md`.
 
 **Request Format:**
+
 ```
 REQ-[Domain]-[Feature] 기능 구현해
 ```
 
 **Examples:**
+
 ```
 REQ-A1-Login 기능 구현해           # Login feature
 REQ-A2-Dashboard 기능 구현해       # Dashboard feature
@@ -104,9 +106,6 @@ Overall team progress is tracked in `docs/DEV-PROGRESS.md`.
 Edit this section with your project's main features:
 
 **Core Components** (TBD):
-- [Feature 1]: Description
-- [Feature 2]: Description
-- [Feature 3]: Description
 
 ---
 
@@ -152,6 +151,7 @@ All development follows conventions defined in `CLAUDE.md`:
 Contributions are welcome! Follow this workflow:
 
 **How to Contribute:**
+
 1. Clone or fork the repository
 2. Edit `.project-info` with your project metadata (REQUIRED)
 3. Configure `docs/FEATURE_REQUIREMENTS.md` with your feature specs
